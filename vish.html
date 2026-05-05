@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Validation using CDNJS</title>
+
+  <!-- jQuery (must come first) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Your CDN link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script>
+
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    label { display: block; margin-top: 10px; }
+    .error { color: red; font-size: 13px; }
+    input { padding: 5px; width: 250px; }
+  </style>
+</head>
+<body>
+
+<h2>Form Validation</h2>
+
+<form id="myForm">
+
+  <label>Name</label>
+  <input type="text" name="name">
+
+  <label>Email</label>
+  <input type="text" name="email">
+
+  <label>Password</label>
+  <input type="password" id="password" name="password">
+
+  <label>Confirm Password</label>
+  <input type="password" name="confirmPassword">
+
+  <label>Age (18–60)</label>
+  <input type="text" name="age">
+
+  <label>Phone</label>
+  <input type="text" name="phone">
+
+  <br><br>
+  <button type="submit">Submit</button>
+
+</form>
+
+<script>
+$(function(){
+
+  $("#myForm").validate({
+
+    rules: {
+      name: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      password: {
+        required: true,
+        minlength: 5,
+        maxlength: 10
+      },
+      confirmPassword: {
+        required: true,
+        equalTo: "#password"
+      },
+      age: {
+        required: true,
+        range: [18, 60]
+      },
+      phone: {
+        required: true,
+        digits: true
+      }
+    },
+
+    messages: {
+      name: "Name is required",
+      email: "Enter valid email",
+      password: {
+        minlength: "Minimum 5 characters",
+        maxlength: "Maximum 10 characters"
+      },
+      confirmPassword: "Passwords must match",
+      age: "Age must be between 18 and 60",
+      phone: "Only digits allowed"
+    },
+
+    submitHandler: function(form) {
+      alert("Form is valid ✅");
+      form.submit();
+    }
+
+  });
+
+});
+</script>
+
+</body>
+</html>
