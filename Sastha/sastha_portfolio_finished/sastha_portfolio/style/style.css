@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier,monospace;
+    /* background: #f5f7fa; */
+    color: #c6c9c6;
+    background-image: url("../assets/5590457.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+ header {
+    background: transparent;
+    color: #d0d4cd;
+    padding: 20px;
+    min-height: 40px; 
+    width: 100%;
+    transition: transform 5s ease;
+    opacity: 0;
+    animation-name: showup;
+    animation-duration: 6s;  
+    animation-fill-mode: forwards;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+.header-center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.header-right {
+    backdrop-filter: blur(10px);
+    border: 1px solid #c6c9c6;
+    padding:10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    width: 150px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+
+    color: #c6c9c6;
+    text-decoration: none;
+}
+
+section {
+    /* max-width: 1800px; */
+    /* margin: 20px auto; */
+    padding: 20px;
+     /* background: transparent; */
+    /* background: rgba(255, 255, 255, 0.1); transparent */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    /* color: rgb(51, 56, 63); */
+}
+
+
+h2 {
+    margin-bottom: 10px;
+    color: #c6c9c6;
+    font-weight: 900;
+}
+
+/* Skills list */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* .header-right a{
+    color:#c6c9c6;
+    text-decoration: none;
+} */
+
+
+/* .about-left {
+    margin: 20px 0 20px 20px; common
+} */
+
+.about_me-left {
+    margin: 20px 0px; /* top right bottom left */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: transform 5s ease;/*hover effect*/
+    animation-name: slideright;
+    animation-duration: 2s;
+    
+}
+
+.profile-pic {
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.skill_project {
+    margin: 20px 0px;
+    display: flex;
+    justify-content:left;
+    gap: 0px;
+    width: auto;
+    /* max-width: 100%; */
+}
+
+.border{
+    /* max-width: 100%; */
+    /* width: 400px; */
+    margin: 20px 10px;
+    padding: 20px;
+     background: transparent;
+   transition: transform 5s ease;/*hover effect*/
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+   
+}
+.border a{
+    color:blanchedalmond
+}
+
+.about_me-left:hover{
+    transform: scale(1.03);
+}
+
+.border:hover{
+    transform: scale(1.03);
+}
+
+header:hover{
+     transform: scale(1.03);
+}
+
+.header-right:hover a{
+    color: black;
+}
+
+.header-right:hover {
+    color: black;
+    background-color: #c6c9c6;
+}
+
+@keyframes slideright {
+    from{transform: translatex(-1150px);}
+}
+
+@keyframes slidedown {
+    from{transform: translatey(-1000px);}
+}
+
+@keyframes slideleft {
+    from{transform: translatex(1000px);}
+}
+
+@keyframes showup{
+    100%{opacity: 1;}
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-right{
+        margin-top: 10px;
+        width: auto;
+    }
+
+ .about_me-left {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about_me-left img.profile-pic {
+        margin: 20px 0 0 0; 
+        width: 150px;      
+        height: auto;
+    }
+
+     .skill_project {
+        flex-direction: column; 
+        align-items: center;    
+    }
+
+    .skill_project .border {
+        width: 90% !important;      
+        margin: 10px 0;   
+    }
+
+}

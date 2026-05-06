@@ -1,0 +1,116 @@
+.background{
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: auto;
+   border: black solid;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.left_background{
+    background-color:#a9bcd0;
+    flex :1;
+}
+.left_background h1{
+    margin: 0px 10px;
+}
+h1{
+    transition: transform 0.5s ease;
+}
+  h3{
+    padding: 0px 0px;
+    margin: 0px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    transition: transform 0.5s ease;
+} 
+ h4{
+    
+    margin-left: 20px;
+    margin-top: 1px;
+}
+.left_background li
+{
+    padding: 5px;
+}
+.right_background{
+
+    background-color:#cee1f2 ;
+    flex :2;
+}
+.right_background p{
+    padding: 2px;
+}
+#img{
+    width: 145px; 
+    height: 150px; 
+    border-radius:50%;
+    margin-left: 40px;
+    margin-top: 10px;
+    border: 2px solid black ;
+
+    transition: transform 0.5s ease;
+}
+.line{
+    display: inline-flex;
+    width: 80%;
+    height: 2px;
+   background-color: rgb(37, 34, 34);
+    size: 100px;
+}
+p{
+    margin-left: 10px;
+    
+    /* justify-content: left; */
+}
+.cards_right {
+    background-color: #a9bcd0;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;  
+    
+}
+
+.cards_left {
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    /* hover */
+    background: linear-gradient(to right, #cee1f2  50%, #a9bcd0 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease;
+}
+
+.cards_left:hover {
+    background-position: left bottom;
+}
+
+.cards_right:hover{
+     box-shadow: 10px 0px 10px black;
+     transform: translateY(10px);
+}
+
+#img:hover {
+   transform: scale(1.1);
+}
+
+h3:hover{
+    color: #6f73d2;
+    transform: scale(1.1);
+}
+
+h1:hover{
+    color: #6f73d2;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 800px) {
+    .background {
+        flex-direction: column; /* stack vertically */
+    }
+
+}
