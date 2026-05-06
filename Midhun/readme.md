@@ -1,0 +1,1 @@
+Hi i will upload later because i dont have my updated portfolio right now.
