@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Sam Mathew | Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav>
+
+  <a href="#home" class="nav-logo">Sanjay</a>
+    <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+  &#9776;
+</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header id="home" class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Sanjay Sam Mathew</span></h1>
+      <h2>Software Developer</h2>
+      
+      <div class="hero-social-icons">
+        <a href="https://github.com/sanjaysammathew" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://in.linkedin.com/in/sanjaysammathew" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="./pages/resume.html"><i class="fas fa-envelope"></i></a>
+      </div>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-blue">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="./images/sanjay.jpg">
+    </div>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="underline"></div>
+  <p>
+    Hello! I'm <strong>Sanjay Sam Mathew</strong>, a passionate software developer with a strong interest in building modern and user-friendly web applications. I completed my schooling at AVB Matriculation Higher Secondary School and am pursuing my degree at Sri Krishna Arts and Science College.
+  </p>
+  <p>
+    I have experience working as a Technical Lead, where I managed teams and ensured successful project delivery. I enjoy learning new technologies, improving my coding skills, and solving real-world problems through creative solutions.
+  </p>
+  <p>
+    Beyond coding, I am an avid explorer of emerging tech trends like Artificial Intelligence and Cloud Computing. I believe in continuous growth and love collaborating on open-source projects that make a meaningful impact on the community.
+  </p>
+</section>
+
+<section id="education">
+  <h2 class="section-title">Education</h2>
+  <div class="underline"></div>
+  <div class="edu-card">
+    <h3>B.Sc Computer Technology</h3>
+    <p>Sri Krishna Arts and Science College &nbsp;·&nbsp; 2023 – 2026</p>
+  </div>
+  <div class="edu-card">
+    <h3>Higher Secondary Certificate (HSC)</h3>
+    <p>AVB Matriculation Higher Secondary School &nbsp;·&nbsp; 2022 – 2023</p>
+  </div>
+  <div class="edu-card">
+    <h3>SSLC</h3>
+    <p>AVB Matriculation Higher Secondary School &nbsp;·&nbsp; 2020 – 2021</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="underline"></div>
+  <div class="skills-wrap">
+    <span class="skill-tag">HTML</span>
+    <span class="skill-tag">CSS</span>
+    <span class="skill-tag">JavaScript</span>
+    <span class="skill-tag">React</span>
+    <span class="skill-tag">Node.js</span>
+    <span class="skill-tag">SQL</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="underline"></div>
+  <div class="projects-grid">
+    <div class="project-card">
+      <span class="project-icon">🌐</span>
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio website built using HTML and CSS to showcase my skills and projects.</p>
+    </div>
+    <div class="project-card">
+      <span class="project-icon">💬</span>
+      <h3>Chat Application</h3>
+      <p>A real-time chat application using JavaScript and Node.js for instant messaging.</p>
+    </div>
+    <div class="project-card">
+      <span class="project-icon">✅</span>
+      <h3>Todo List App</h3>
+      <p>A simple task management app to add, update, and delete daily tasks easily.</p>
+    </div>
+    <div class="project-card">
+      <span class="project-icon">🌤️</span>
+      <h3>Weather App</h3>
+      <p>A web app that fetches real-time weather data using an API and displays it to users.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="underline"></div>
+  <div class="contact-box">
+    <p>Feel free to reach out!</p>
+    <p style="margin-top:5px;">📧 <a href="mailto:sanjay@example.com">sanjay@example.com</a></p>
+    <div class="social-row">
+      <a href="https://github.com/sanjaysammathew" class="social-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://in.linkedin.com/in/sanjaysammathew" class="social-btn" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="./pages/resume.html" class="social-btn"><i class="fas fa-file-pdf"></i> Resume</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <span>Sanjay Sam Mathew</span></p>
+</footer>
+
+</body>
+</html>
