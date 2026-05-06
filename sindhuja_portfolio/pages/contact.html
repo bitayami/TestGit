@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Sindhuja S</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(#A1C4FD, #F6CEEC);
+        }
+        .contact-section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .contact-grid {
+            width: 60%;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin:auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            border:4px solid #F6CEEC;
+        }
+
+        .contact-grid:hover {
+            transform: scale(1.02);
+        }
+        .contact-info h2 
+        { 
+            margin-bottom: 20px; 
+        }
+        .contact-info p
+         {
+             margin-bottom: 30px; 
+        }
+        .info-item 
+        {
+             display: flex; 
+             align-items: center;
+             margin-bottom: 20px; 
+        }
+       .contact-2 {
+            margin-top: 80px;
+        }
+        .container{
+            padding-bottom: 20px;
+        }
+        @media (max-width: 1024px) {
+            .contact-grid {
+                width: 80%;
+                padding: 25px;
+            }
+        }
+        @media (max-width: 768px) {
+
+            .contact-section {
+                height: auto;
+                padding: 40px 15px;
+            }
+
+            .contact-grid {
+                width: 100%;
+                padding: 20px;
+                border-radius: 15px;
+            }
+
+            .contact-info h2 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .contact-info p {
+                font-size: 0.95rem;
+                text-align: center;
+            }
+
+            .info-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .info-item h4 {
+                font-size: 1rem;
+            }
+
+            .info-item p {
+                font-size: 0.9rem;
+            }
+        }
+        @media (max-width: 480px) {
+
+        .contact-grid {
+            padding: 15px;
+        }
+
+        .contact-info h2 {
+            font-size: 1.3rem;
+        }
+
+        .contact-info p {
+            font-size: 0.85rem;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+        }
+    }
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Sindhuja.S</div>
+        <!-- checkbox -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- hamburger -->
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-section">
+        <div class="container">
+            <!-- <h2 class="section-title">Get In Touch</h2> -->
+            <div class="contact-grid">
+
+    <div class="contact-info">
+        <h2>Let's Connect</h2>
+        <p>
+            I'm always open to discussing new projects, creative ideas, 
+            or opportunities to be part of your visions. Feel free to reach out.
+        </p>
+
+        <div class="info-item">
+            <div>
+                <h4><i class='bx bxs-envelope' ></i> Email</h4>
+                <p>sindhujas388@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="info-item">                        
+            <div>
+                <h4><i class='bx bx-mobile bx-sl' ></i> Phone</h4>
+                <p>+91 6384606750</p>
+            </div>
+        </div>
+
+        <div class="info-item">                        
+            <div>
+                <h4><i class='bx bx-map' ></i> Location</h4>
+                <p>Coimbatore, Tamil Nadu</p>
+            </div>
+        </div>
+
+        <div class="info-item">                        
+            <div>
+                <h4><i class='bx bxl-linkedin-square bx-sl '></i> LinkedIn</h4>
+                <p>
+                    <a href="https://www.linkedin.com/in/sindhuja-s-bscct" target="_blank">
+                        sindhuja-s-bscct
+                    </a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+        </div>
+    </section>
+</body>
+</html>

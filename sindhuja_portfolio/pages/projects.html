@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Sindhuja S</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        body{
+            background:linear-gradient(#A1C4FD, #F6CEEC);
+        }
+        .projects-section 
+        {
+            padding: 80px 0;
+            height:100%;
+         }
+        .projects-grid 
+        {
+             display: grid;
+             grid-template-columns: 1fr 1fr; 
+             gap: 30px; 
+             margin-top: 50px;
+        }
+        .project-card
+         { 
+            background-color: var(--white); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            border-left:4px solid #F6CEEC;
+         }
+        .project-card:hover 
+        { 
+            transform: translateY(-10px); 
+        }
+        .project-info 
+        { 
+            padding: 25px; 
+        }
+        .project-info h3 
+        {
+             margin-bottom: 10px; 
+             color: var(--primary-color);
+         }
+        .project-info p
+         {
+             margin-bottom: 15px;
+             font-size: 0.95rem; 
+        }
+        .tags 
+        { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 10px; 
+        }
+        .tag
+         {
+            background-color: var(--accent-color); 
+            padding: 5px 12px;
+            border-radius: 20px; 
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--secondary-color); 
+        }
+       
+        @media (max-width: 1024px) {
+            .projects-grid {
+                grid-template-columns: 1fr; 
+            }
+
+            .projects-section {
+                padding: 60px 20px;
+            }
+        }
+        @media (max-width: 768px) {
+
+            .projects-section {
+                padding: 40px 15px;
+        }
+
+        .projects-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .project-card {
+            border-radius: 8px;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info h3 {
+            font-size: 1.3rem;
+        }
+
+        .project-info p {
+            font-size: 0.9rem;
+        }
+
+        .features li {
+            font-size: 0.85rem;
+            margin-bottom: 5px;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 4px 10px;
+        }
+    }
+    @media (max-width: 480px) {
+
+        .project-info {
+            padding: 15px;
+        }
+
+        .project-info h3 {
+            font-size: 1.1rem;
+        }
+
+        .project-info p {
+            font-size: 0.85rem;
+        }
+
+        .features li {
+            font-size: 0.8rem;
+        }
+    }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Sindhuja.S</div>
+        <!-- checkbox -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- hamburger -->
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                 <div class="project-card">
+                    <div class="project-info">
+                        <h3>Crime Records Management System</h3>
+                        <p>
+                            A web-based system to manage crime records and FIR registration,
+                            enabling efficient data storage, search, and report handling.
+                        </p>
+
+                        <ul class="features">
+                            <li> FIR registration and record management</li>
+                            <li> Secure login for police/admin</li>
+                            <li> Search and filter crime records</li>
+                            <li> Structured database for quick access</li>
+                        </ul>
+                        <br>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>FinTrack (Personal Finance Tracker)</h3>
+                        <p>
+                            A web-based personal finance tracker to manage income, expenses,
+                            and savings with real-time insights and visual reports.
+                        </p>
+
+                        <ul class="features">
+                            <li> Add and track income & expenses</li>
+                            <li> Category-wise spending analysis</li>
+                            <li> Data stored using localStorage</li>
+                            <li> Interactive charts for insights</li>
+                        </ul>
+                        <br>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Online Voting System</h3>
+                        <p>
+                            A secure web-based student association election system with login authentication,
+                            candidate nomination, and real-time vote counting.
+                        </p>
+
+                        <ul class="features">
+                            <li> One student – one vote system</li>
+                            <li> Admin approval for candidates</li>
+                            <li> Secure login & session management</li>
+                            <li> Instant result generation</li>
+                        </ul>
+                        <br>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Smart AI-Based QR Attendance System</h3>
+                    <p>
+                        A web-based attendance system using QR code verification
+                        for fast, secure, and automated student attendance tracking.
+                    </p>
+
+                    <ul class="features">
+                        <li> QR code-based attendance verification</li>
+                        <li> Automated attendance recording</li>
+                        <li> Secure login for students and admin</li>
+                        <li> Real-time attendance tracking and reports</li>
+                    </ul>
+                    <br>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
