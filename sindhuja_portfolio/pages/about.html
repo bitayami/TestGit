@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Sindhuja S</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        body{
+        font-family: 'Segoe UI', sans-serif;
+        animation: myAnimation 8s ease-in-out infinite alternate;
+        margin: 0;
+    }
+
+    @keyframes myAnimation {
+        0% { background: linear-gradient(135deg, #A1C4FD, #C2E9FB); }
+        100% { background: linear-gradient(135deg, #F6CEEC, #DFF9FB); }
+    }
+
+    .about-section { 
+        padding: 80px 20px;
+    }
+
+    
+    .about-grid {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        gap: 40px; 
+        align-items: start; 
+    }
+
+    .about-text, .certifications {
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(12px);
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .about-text:hover, .certifications:hover {
+        transform: translateY(-5px);
+    }
+
+    .about-text h2 {
+        margin-bottom: 20px; 
+        color: var(--primary-color);
+    }
+
+    .about-text p {
+        margin-bottom: 15px; 
+        line-height: 1.6;
+    }
+
+    h3 {
+        margin-top: 20px;
+        color: var(--secondary-color);
+    }
+
+    .item {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-left: 4px solid var(--primary-color);
+        background: white;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .item:hover {
+        background: #f9fafb;
+        transform: scale(1.02);
+    }
+
+    .item h4 {
+        margin-bottom: 5px;
+    }
+
+    .item span {
+        color: var(--gray);
+        font-size: 0.9rem;
+    }
+    
+    @media(max-width: 768px){
+        .about-grid{
+            grid-template-columns: 1fr;
+        }
+    }
+     @media(max-width: 1024px){
+        .about-grid{
+            grid-template-columns: 1fr;
+        }
+    }
+     @media(max-width: 480px){
+        .about-grid{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Sindhuja.S</div>
+        <!-- checkbox -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- hamburger -->
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I am currently working as a Software Engineer Trainee at G2 Technology Solutions India Pvt. Limited, where I am gaining hands-on experience in developing real-world web applications and strengthening my technical skills.</p>
+                    <p>Alongside my professional role, I am pursuing my B.Sc in Computer Technology at Kongunadu Arts and Science College, Coimbatore. I have a strong foundation in programming and web technologies, with a keen interest in building scalable and user-friendly applications.</p>
+                    <p>I am passionate about continuous learning, problem-solving, and adapting to new technologies in the ever-evolving IT industry.</p>
+                    
+                    <div class="education-list">
+                        <h3>Education</h3>
+                        <div class="item">
+                            <h4>B.Sc Computer Technology</h4>
+                            <p>Kongunadu Arts and Science College, Coimbatore</p>
+                            <span>2023 – 2026 | CGPA: 8.552 (Upto 5th Semester)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <div class="certification-list">
+                        <div class="item">
+                            <h4>Frontend Development</h4>
+                            <p>IBM SkillsBuild (2025)</p>
+                        </div>
+                        <div class="item">
+                            <h4>Web Development Mastery</h4>
+                            <p>Coursera (2025)</p>
+                        </div>
+                        <div class="item">
+                            <h4>Excel for Beginners & Intermediate</h4>
+                            <p>Great Learning (2024)</p>
+                        </div>
+                        <div class="item">
+                            <h4>Front End Development - HTML</h4>
+                            <p>Great Learning (2024)</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Achievements</h3>
+                    <div class="item">
+                        <h4>3rd Place - She Codes AI</h4>
+                        <p>Presented a Bus Tracking System concept.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Top 10 - IDEATHON</h4>
+                        <p>Rathinam College of Arts and Science.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+</body>
+</html>
